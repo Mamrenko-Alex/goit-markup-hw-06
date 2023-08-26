@@ -89,6 +89,14 @@
     display: flex;
     gap: 56px;
   }
+
+  .current {
+    color: var(--pressed-color);
+  }
+
+  .link.current::after {
+    background-color: var(--pressed-color);
+  }
 }
 
 @media screen and (min-width: 768px) {
