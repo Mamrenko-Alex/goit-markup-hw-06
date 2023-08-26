@@ -13,7 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,6 +58,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="button-open-mobile-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -81,9 +92,10 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="./images/portfolio-list/app/banking@2x.jpg 2x"
+                    src="./images/portfolio-list/app/banking.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/app/banking.jpg"
                     alt="Banking App Interface Concept"
                     class="project-img"
                   />
@@ -103,9 +115,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/marketing/cashless-payment@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/marketing/cashless-payment.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/marketing/cashless-payment.jpg"
                     alt="Cashless Payment"
                     class="project-img"
                   />
@@ -125,9 +140,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/app/meditation-app@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/app/meditation-app.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/app/meditation-app.jpg"
                     alt="Meditation App"
                     class="project-img"
                   />
@@ -147,9 +165,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/marketing/taxi-service@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/marketing/taxi-service.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/marketing/taxi-service.jpg"
                     alt="Taxi Service"
                     class="project-img"
                   />
@@ -169,9 +190,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/desighn/screen-illustrations@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/desighn/screen-illustrations.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/desighn/screen-illustrations.jpg"
                     alt="Screen Illustrations"
                     class="project-img"
                   />
@@ -191,9 +215,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/marketing/online-courses@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/marketing/online-courses.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/marketing/online-courses.jpg"
                     alt="Online Courses"
                     class="project-img"
                   />
@@ -213,9 +240,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/desighn/instagram-stories@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/desighn/instagram-stories.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/desighn/instagram-stories.jpg"
                     alt="Instagram Stories Concept"
                     class="project-img"
                   />
@@ -235,9 +265,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/web-site/organic-food@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/web-site/organic-food.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/web-site/organic-food.jpg"
                     alt="Organic Food"
                     class="project-img"
                   />
@@ -257,9 +290,12 @@
               <a href="" class="link portfolio-link">
                 <div class="overlay">
                   <img
+                    srcset="
+                      ./images/portfolio-list/web-site/fresh-coffee@2x.jpg 2x
+                    "
+                    src="./images/portfolio-list/web-site/fresh-coffee.jpg"
                     width="360"
                     height="300"
-                    src="./images/portfolio-list/web-site/fresh-coffee.jpg"
                     alt="Fresh Coffee"
                     class="project-img"
                   />
@@ -370,5 +406,110 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu-window js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-wrapper">
+        <button
+          class="mobile-menu-close-button js-close-menu"
+          type="button"
+          data-modal-close
+        >
+          <svg class="mobile-menu-close-button-image" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-window-nav">
+          <ul class="list mobile-menu-nav">
+            <li class="mobile-nav-item">
+              <a class="link mobile-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="link mobile-menu-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-nav-item">
+              <a class="link mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-menu-window-contacts">
+          <ul class="list mobile-menu-contacts">
+            <li class="mobile-phone">
+              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-mail">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-menu-social">
+          <ul class="list mobile-menu-socials-list">
+            <li class="company-social">
+              <a
+                class="link company-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="company-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-social">
+              <a
+                class="link company-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <svg class="company-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-social">
+              <a
+                class="link company-link"
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="company-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="company-social">
+              <a
+                class="link company-link"
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+              >
+                <svg class="company-social-icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,11 @@
+@import './utils/variables.css';
+@import './utils/modal-windows.css';
+@import './utils/mobile-menu.css';
+@import './base/common.css';
+@import './base/buttons.css';
+
+@import './layout/header.css';
+/* ========== MAIN ========== */
+@import './layout/projects.css';
+/* ========== /MAIN ========== */
+@import './layout/footer.css';

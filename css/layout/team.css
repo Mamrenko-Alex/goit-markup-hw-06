@@ -1,0 +1,104 @@
+/* ========== TEAM ==========
+
+.teammate {
+  
+}
+
+
+
+/* ========== /TEAM ========== */
+.teammate {
+  background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team {
+  background-color: var(--light-background-color);
+}
+
+.teammate-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  fill: var(--light-background-color);
+  background-color: var(--primary-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.teammate-socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.teammate-position {
+  margin-bottom: 8px;
+}
+
+.name-position {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.img-temammate {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .team .container {
+    padding: 96px 82px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teammate {
+    max-width: 264px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team .container {
+    padding: 96px 108px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teammate {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team .container {
+    padding: 96px 15px;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .teammate {
+    width: var(--width-small-card);
+  }
+
+  .teammate-link:hover,
+  .teammate-link:focus {
+    background-color: var(--pressed-color);
+  }
+}

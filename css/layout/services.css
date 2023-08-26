@@ -1,0 +1,19 @@
+@media screen and (max-width: 1157px) {
+  .our-doing {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .our-doing {
+    padding-bottom: 120px;
+  }
+
+  .what-do {
+    display: flex;
+  }
+
+  .card-doing {
+    width: var(--width-big-card);
+  }
+}

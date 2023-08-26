@@ -1,0 +1,15 @@
+@import './utils/variables.css';
+@import './utils/modal-windows.css';
+@import './utils/mobile-menu.css';
+@import './base/common.css';
+@import './base/buttons.css';
+
+@import './layout/header.css';
+/* ========== MAIN ========== */
+@import './layout/hero.css';
+@import './layout/benefits.css';
+@import './layout/services.css';
+@import './layout/team.css';
+@import './layout/customers.css';
+/* ========== /MAIN ========== */
+@import './layout/footer.css';
