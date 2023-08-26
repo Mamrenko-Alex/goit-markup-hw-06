@@ -1,9 +1,3 @@
-/* .customer-link:hover,
-.customer-link:focus {
-  color: var(--pressed-color);
-  border-color: var(--pressed-color);
-} */
-
 .customer-icons {
   fill: currentColor;
 }
@@ -33,30 +27,31 @@
 
   .list.customers-list {
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 72px 16px;
+  }
+
+  .customer {
+    width: calc((100% - 16px) / 2);
   }
 
   .customer-link {
-    width: 190px;
-    height: 88px;
+    padding: 16px 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .customers {
     padding: 96px 0;
-    padding-bottom: 24px;
   }
 
   .list.customers-list {
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .customer-link {
     width: 168px;
     height: 88px;
-    margin-bottom: 72px;
   }
 }
 

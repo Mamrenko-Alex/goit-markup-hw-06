@@ -33,6 +33,7 @@
 
   .display-header {
     font-size: 36px;
+    max-width: 320px;
   }
 }
 

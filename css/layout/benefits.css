@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 72px;
+    gap: 72px 24px;
   }
 
   .card-benefit {
@@ -25,8 +25,12 @@
   }
 
   .benefit-header {
+    text-align: center;
     font-size: 36px;
-    margin: 0 auto;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.045em;
+    text-transform: capitalize;
   }
 
   .benefit-text {
@@ -38,15 +42,14 @@
   .benefit-icon {
     display: none;
   }
-
-  .benefits .container {
-    padding: 96px 16px;
-    padding-top: 24px;
+  .benefits {
+    padding: 96px 0;
   }
 
   .list.benefits-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
   }
 
   .card-benefit {
@@ -59,7 +62,6 @@
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.045em;
-    padding-top: 72px;
   }
 }
 
@@ -75,7 +77,7 @@
     padding-top: 0;
   }
 
-  .benefits .container {
+  .benefits {
     padding: 120px 0;
   }
 

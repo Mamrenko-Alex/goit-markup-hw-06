@@ -4,7 +4,7 @@
 
 .footer-slogan {
   color: var(--white);
-  max-width: 264px;
+  width: 264px;
 }
 
 .our-social,
@@ -56,9 +56,6 @@
 
 @media screen and (max-width: 767px) {
   .site-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 96px 0;
   }
 
@@ -79,21 +76,27 @@
   .callback-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
+    width: 100%;
   }
 
   .subscribe-user-email {
-    width: 398px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container.footer-container {
+    max-width: 584px;
+  }
+  .site-footer {
+    padding: 96px 0;
+  }
+
+  .container.footer-container {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding: 96px 108px;
   }
 
   .subscribe-user-email {
@@ -107,10 +110,15 @@
 }
 
 @media screen and (min-width: 1158px) {
-  .container.footer-container {
+  .site-footer {
     padding: 100px 0;
+  }
+
+  .container.footer-container {
+    max-width: 1128px;
     flex-wrap: nowrap;
     align-items: baseline;
+    gap: 0;
   }
 
   .footer-content-container {
