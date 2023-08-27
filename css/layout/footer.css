@@ -86,17 +86,15 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container.footer-container {
-    max-width: 584px;
-  }
   .site-footer {
     padding: 96px 0;
   }
 
   .container.footer-container {
+    max-width: 584px;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .subscribe-user-email {

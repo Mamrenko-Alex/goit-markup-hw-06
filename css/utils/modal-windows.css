@@ -183,7 +183,17 @@
 }
 /* ========== /FORMS ========== */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 427px) {
+  .modal-window {
+    width: calc(100% - 30px);
+  }
+
+  .order-form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
   .modal-window {
     width: 392px;
   }
